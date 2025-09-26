@@ -3,9 +3,11 @@ import About from "./Pages/About";
 import HomePage from "./Pages/HomePage";
 import NotFound from "./Pages/NotFound";
 import RoadmapsHub from "./Pages/RoadmapsHub";
-import RoadmapPage from "./Pages/RoadmapPage";
 import Navbar from "./Components/Navbar";
 import Footer from "./Components/Footer";
+import ML_RoadMap from "./Pages/Roadmaps/ML_RoadMap";
+import Contact from "./Pages/Contact";
+import Heuristics_Roadmap from "./Pages/Roadmaps/Heuristics_Roadmap";
 
 export default function App() {
   return (
@@ -14,8 +16,10 @@ export default function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="/roadmaps" element={<RoadmapsHub />} />
-          <Route path="/roadmaps/:slug" element={<RoadmapPage />} />
+          <Route path="/roadmaps/ml-roadmap" element={<ML_RoadMap />} />
+          <Route path="/roadmaps/heuristics-roadmap" element={<Heuristics_Roadmap />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
 

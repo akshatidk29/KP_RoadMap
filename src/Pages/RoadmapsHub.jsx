@@ -1,26 +1,56 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 const RoadmapsHub = () => {
   const roadmaps = [
-    { slug: "heuristics", title: "Heuristics & Optimization", desc: "Step-by-step roadmap to master heuristics and optimization algorithms." },
-    { slug: "ml", title: "Machine Learning", desc: "Learn core ML concepts, supervised/unsupervised learning, and more." },
+    {
+      id: 'ml-roadmap',
+      title: 'Machine Learning Roadmap',
+      description:
+        'A structured path to master Machine Learning, from the fundamentals of Python and statistics to advanced concepts like deep learning.',
+      image: 'ML.png',
+      link: '/roadmaps/ml-roadmap',
+    },
+    {
+      id: 'heuristics-roadmap',
+      title: 'Heuristics & Optimization Roadmap',
+      description:
+        'Learn problem-solving strategies and optimization techniques to efficiently tackle complex computational challenges, including search algorithms, metaheuristics, and real-world applications.',
+      image: 'Heuristics.png',
+      link: '/roadmaps/heuristics-roadmap',
+    }
   ];
 
   return (
-    <div className="mx-auto px-6 py-12 space-y-8">
-      <h2 className="text-3xl font-bold text-gray-800">Roadmaps</h2>
-
-      <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
+    <div className="min-h-screen bg-gray-950 text-white">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 space-y-20">
         {roadmaps.map((rm) => (
-          <Link
-            key={rm.slug}
-            to={`/roadmaps/${rm.slug}`}
-            className="block bg-white p-6 rounded-lg shadow-sm hover:shadow-lg transition transform hover:-translate-y-1"
+          <div
+            key={rm.id}
+            className="flex flex-col md:flex-row items-center md:items-start gap-10 md:gap-16"
           >
-            <h3 className="text-xl font-semibold text-blue-600 mb-2">{rm.title}</h3>
-            <p className="text-gray-600 text-sm">{rm.desc}</p>
-          </Link>
+            <div className="flex-shrink-0 w-3/4 md:w-1/2 ">
+              <img
+                src={rm.image}
+                alt={rm.title}
+                className="rounded-2xl shadow-xl object-cover w-full h-3/4 border-2 border-white"
+              />
+            </div>
+
+            <div className="md:w-1/2 space-y-6 text-center md:text-left">
+              <h1 className="text-4xl md:text-5xl font-extrabold text-white">
+                {rm.title}
+              </h1>
+              <p className="text-gray-400 text-lg leading-relaxed">
+                {rm.description}
+              </p>
+              <Link
+                to={rm.link}
+                className="inline-block px-8 py-4 bg-blue-700 text-white font-semibold rounded-3xl hover:bg-blue-500 transition-colors shadow-md"
+              >
+                Explore Roadmap
+              </Link>
+            </div>
+          </div>
         ))}
       </div>
     </div>

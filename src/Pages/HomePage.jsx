@@ -2,71 +2,69 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const HomePage = () => {
+  const features = [
+    {
+      title: "Structured Learning",
+      description: "Follow curated paths from fundamentals to advanced topics in AI, ML, and Heuristics.",
+    },
+    {
+      title: "Hands-on Projects",
+      description: "Gain real-world experience by building projects as you learn each roadmap.",
+    },
+    {
+      title: "Expert Guidance",
+      description: "Learn from community contributors, IIT Mandi experts, and experienced mentors.",
+    },
+    {
+      title: "Cutting-edge Topics",
+      description: "Stay ahead with the latest developments in AI, Machine Learning, and Optimization.",
+    },
+  ];
+
   return (
-    <div className="space-y-16">
-      <section className="text-center py-16">
-        <h2 className="text-4xl font-bold mb-4 text-gray-800">
-          Welcome to <span className="text-blue-600">Kamand Prompt</span>
-        </h2>
-        <p className="mx-auto text-gray-600 text-lg">
-          Explore curated roadmaps in Artificial Intelligence, Machine Learning,
-          and Heuristics. Your journey into cutting-edge computing starts here —
-          powered by the Programming Club, IIT Mandi.
+    <div className="bg-gray-950 min-h-screen text-gray-300">
+      <section className="text-center py-24 px-6">
+        <h1 className="text-4xl md:text-6xl font-extrabold mb-6 text-white tracking-tight">
+          Welcome to{" "}
+          <span className="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
+            Kamand Prompt
+          </span>
+        </h1>
+        <p className="mx-auto max-w-2xl text-lg text-gray-400 leading-relaxed">
+          Explore curated roadmaps in{" "}
+          <span className="text-white font-medium">Artificial Intelligence</span>,{" "}
+          <span className="text-white font-medium">Machine Learning</span>, and{" "}
+          <span className="text-white font-medium">Heuristics</span>.
+          Your journey into cutting-edge computing starts here — powered by the
+          Programming Club, IIT Mandi.
         </p>
       </section>
 
-      <section className="mx-auto px-6">
-        <h3 className="text-2xl font-semibold mb-3 text-gray-800">About Us</h3>
-        <p className="text-gray-600 leading-relaxed">
-          Kamand Prompt is an initiative by the Programming Club, IIT Mandi, to
-          guide students and enthusiasts through the ever-evolving world of
-          computing. Our goal is to create structured, easy-to-follow roadmaps
-          that help learners build strong foundations and progress into advanced
-          topics at their own pace.
-        </p>
-      </section>
-
-      <section className="bg-gray-50 py-12">
-        <div className="mx-auto px-6">
-          <h3 className="text-2xl font-semibold mb-6 text-gray-800">
-            Featured Roadmaps
-          </h3>
-          <div className="grid md:grid-cols-3 gap-6">
-            {[
-              { slug: "heuristics", title: "Heuristics & Optimization" },
-              { slug: "ml", title: "Machine Learning" },
-              { slug: "ai", title: "Artificial Intelligence" },
-            ].map((rm) => (
-              <Link
-                key={rm.slug}
-                to={`/roadmaps/${rm.slug}`}
-                className="block border rounded-lg p-6 bg-white shadow-sm hover:shadow-md transition"
+      <section className="py-16">
+        <div className="max-w-6xl mx-auto px-6">
+          <h2 className="text-3xl font-bold mb-12 text-center text-white">
+            Why Learn with Kamand Prompt?
+          </h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+            {features.map((feature, index) => (
+              <div
+                key={index}
+                className="bg-gray-900 p-8 rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300 text-center space-y-4"
               >
-                <h4 className="text-lg font-semibold text-blue-600 mb-2">
-                  {rm.title}
-                </h4>
-                <p className="text-gray-600 text-sm">
-                  Explore the step-by-step roadmap for {rm.title}.
-                </p>
-              </Link>
+
+                <h3 className="text-xl font-semibold text-white">{feature.title}</h3>
+                <p className="text-gray-400 text-sm leading-relaxed">{feature.description}</p>
+              </div>
             ))}
           </div>
         </div>
       </section>
-
-      <section className="text-center py-12">
-        <h3 className="text-2xl font-semibold text-gray-800 mb-3">
-          Ready to start your journey?
-        </h3>
-        <p className="text-gray-600 mb-6">
-          Check out our detailed roadmaps and begin learning today.
-        </p>
-        <Link
-          to="/roadmaps"
-          className="px-6 py-3 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition"
-        >
-          Explore Roadmaps
-        </Link>
+      <section className="mt-16 pb-16 flex justify-center">
+        <img
+          src="/IIT.png" // replace with your actual image path
+          alt="Illustration"
+          className="w-1/2 h-auto object-cover rounded-2xl"
+        />
       </section>
     </div>
   );
