@@ -1,0 +1,59 @@
+{
+  "title": "Machine Learning Roadmap",
+  "description": "A structured journey into Machine Learning, starting from fundamentals and moving into advanced topics.",
+  "sections": [
+    {
+      "section": "Week 1",
+      "title": "Foundations of Python & Math",
+      "image": "/ML.png",
+      "imagePosition": "left",
+      "content": "This section introduces the absolute foundations required for machine learning. You’ll start with Python programming essentials and cover the mathematical backbone of ML — linear algebra, probability, and calculus. A solid grasp of these will help you deeply understand ML algorithms later.",
+      "subsections": [
+        {
+          "title": "Python Basics",
+          "points": [
+            "Variables & Data Types",
+            "Loops & Functions",
+            "Modules & Libraries (NumPy, Pandas)"
+          ],
+          "details": "Python is the primary language for machine learning. In this subsection, you’ll learn the syntax, data types (int, float, string, list, dict), control flow (if-else, loops), and how to write functions. You’ll also explore libraries like NumPy for numerical operations and Pandas for data handling. By the end, you should be able to write simple scripts and manipulate datasets efficiently."
+        },
+        {
+          "title": "Math Refresher",
+          "points": [
+            "Linear Algebra essentials",
+            "Probability distributions",
+            "Differentiation & Gradients"
+          ],
+          "details": "Mathematics is the backbone of ML. In this subsection, focus on vectors, matrices, dot products, and eigenvalues in linear algebra. For probability, cover conditional probability, Bayes theorem, and distributions like Gaussian. Calculus is key for optimization: understand derivatives and gradients to grasp how ML models learn by minimizing loss functions."
+        }
+      ]
+    },
+    {
+      "section": "Week 2",
+      "title": "Data Handling & Visualization",
+      "image": "/KP.png",
+      "imagePosition": "right",
+      "content": "In this section, you’ll work with real-world datasets, clean them, and visualize insights. This is a crucial step before model building, as data preparation often consumes 70% of a data scientist’s time.",
+      "subsections": [
+        {
+          "title": "Data Handling",
+          "points": [
+            "Reading CSV/JSON",
+            "Cleaning Data",
+            "Handling Missing Values"
+          ],
+          "details": "Data rarely comes clean. Learn to read CSV, JSON, and Excel files using Pandas. Practice cleaning operations like handling null values, removing duplicates, and normalizing column formats. Explore techniques for dealing with missing data — imputation, interpolation, or removal. Good data hygiene ensures better ML model performance."
+        },
+        {
+          "title": "Visualization",
+          "points": [
+            "Matplotlib & Seaborn basics",
+            "Plotly interactive charts"
+          ],
+          "details": "Visualization helps uncover data patterns. Start with Matplotlib for static plots (line, bar, scatter). Seaborn builds on this to create statistical visualizations like heatmaps and pairplots. For interactivity, explore Plotly, which allows zooming, hovering, and exporting charts. Effective visualization improves intuition about datasets and guides model decisions."
+        }
+      ]
+    }
+  ]
+}

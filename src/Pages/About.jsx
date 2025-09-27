@@ -12,8 +12,8 @@ const About = () => {
           </span>
         </h2>
         <p className="max-w-2xl text-lg text-gray-400 leading-relaxed">
-          <strong className="text-white">Kamand Prompt</strong> is the 
-          Programming Club of IIT Mandi, building a community of learners 
+          <strong className="text-white">Kamand Prompt</strong> is the
+          Programming Club of IIT Mandi, building a community of learners
           and problem-solvers through knowledge sharing and collaboration.
         </p>
       </section>
@@ -28,7 +28,7 @@ const About = () => {
             <span className="text-blue-400 font-medium">Heuristics</span>,{" "}
             <span className="text-blue-400 font-medium">AI</span>, and{" "}
             <span className="text-blue-400 font-medium">Machine Learning</span>{" "}
-            into structured, easy-to-follow learning paths.  
+            into structured, easy-to-follow learning paths.
             Our goal is to empower learners to build skills and create impact.
           </p>
         </div>
@@ -52,7 +52,7 @@ const About = () => {
           ].map((item) => (
             <div
               key={item.title}
-              className="p-8 rounded-2xl bg-gray-900 border border-gray-700 shadow hover:shadow-lg hover:border-blue-400 transition"
+              className="p-8 rounded-2xl bg-gray-950 border border-gray-700 shadow hover:shadow-lg hover:border-blue-600 transition"
             >
               <h4 className="text-2xl font-semibold text-blue-400 mb-4">
                 {item.title}

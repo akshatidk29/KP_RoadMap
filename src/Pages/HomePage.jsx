@@ -30,14 +30,13 @@ const HomePage = () => {
             Kamand Prompt
           </span>
         </h1>
-        <p className="mx-auto max-w-2xl text-lg text-gray-400 leading-relaxed">
-          Explore curated roadmaps in{" "}
-          <span className="text-white font-medium">Artificial Intelligence</span>,{" "}
-          <span className="text-white font-medium">Machine Learning</span>, and{" "}
-          <span className="text-white font-medium">Heuristics</span>.
-          Your journey into cutting-edge computing starts here — powered by the
-          Programming Club, IIT Mandi.
-        </p>
+<p className="mx-auto max-w-2xl text-lg text-gray-400 leading-relaxed">
+  Discover structured learning paths and expert-curated roadmaps designed 
+  to guide you from fundamentals to mastery in emerging technologies. 
+  Whether you’re a beginner or aiming to enhance your skills, Kamand Prompt 
+  provides a clear, practical roadmap to help you achieve your learning goals.
+</p>
+
       </section>
 
       <section className="py-16">

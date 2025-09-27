@@ -1,0 +1,60 @@
+{
+  "title": "Heuristics & Optimization Roadmap",
+  "description": "A structured roadmap to learn heuristics and optimization techniques, from problem-solving basics to advanced metaheuristic algorithms.",
+  "sections": [
+    {
+      "section": "Section 1",
+      "title": "Introduction to Heuristics & Problem Solving",
+      "image": "",
+      "imagePosition": "left",
+      "content": "Heuristics are strategies or approaches that guide problem-solving when traditional methods are inefficient or infeasible. This section introduces heuristics, their role in AI/ML, and how they compare with exact methods.",
+      "subsections": [
+        {
+          "title": "What are Heuristics?",
+          "points": [
+            "Definition and motivation",
+            "Exact vs heuristic methods",
+            "Applications in search and optimization"
+          ],
+          "details": "Heuristics are practical methods that help reach good-enough solutions in complex problems where finding the exact solution may be computationally expensive. They are widely used in AI search, scheduling, and real-world optimization tasks."
+        },
+        {
+          "title": "Classic Problem Examples",
+          "points": [
+            "Travelling Salesman Problem (TSP)",
+            "Knapsack Problem",
+            "Job Scheduling"
+          ],
+          "details": "These problems demonstrate why heuristics are necessary: TSP is NP-hard, the knapsack problem requires optimization under constraints, and scheduling involves balancing multiple objectives. Understanding these gives a foundation for applying heuristics."
+        }
+      ]
+    },
+    {
+      "section": "Section 2",
+      "title": "Local Search & Greedy Algorithms",
+      "image": "/Heuristics.png",
+      "imagePosition": "right",
+      "content": "Learn about simple heuristic methods such as greedy algorithms and local search, which form the basis of more advanced metaheuristics.",
+      "subsections": [
+        {
+          "title": "Greedy Algorithms",
+          "points": [
+            "Greedy choice property",
+            "Activity selection problem",
+            "Limitations of greedy methods"
+          ],
+          "details": "Greedy algorithms build a solution step by step, always choosing the locally optimal choice. While fast, they don’t always guarantee a global optimum. For example, activity selection works optimally, but greedy fails for knapsack."
+        },
+        {
+          "title": "Local Search",
+          "points": [
+            "Hill Climbing",
+            "Simulated Annealing basics",
+            "Neighborhood structures"
+          ],
+          "details": "Local search explores the solution space by moving from one candidate solution to a 'neighbor'. While simple hill climbing can get stuck in local optima, simulated annealing uses randomness to escape and explore more globally."
+        }
+      ]
+    }
+  ]
+}
