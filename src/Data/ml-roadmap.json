@@ -7,53 +7,695 @@
       "title": "Foundations of Python & Math",
       "image": "/ML.png",
       "imagePosition": "left",
-      "content": "This section introduces the absolute foundations required for machine learning. You’ll start with Python programming essentials and cover the mathematical backbone of ML — linear algebra, probability, and calculus. A solid grasp of these will help you deeply understand ML algorithms later.",
+      "content": "This section introduces the absolute foundations required for machine learning. You’ll start with Python programming essentials and cover the mathematical backbone of ML — linear algebra, probability, and calculus. A solid grasp of these will help you deeply understand ML algorithms later. I would recommend starting out with the 4 hours freeCodeCamp course and then to continue with either of the mathematics for machine learning playlists that are recommended below.",
       "subsections": [
         {
           "title": "Python Basics",
           "points": [
             "Variables & Data Types",
             "Loops & Functions",
-            "Modules & Libraries (NumPy, Pandas)"
+            "Modules & Libraries (NumPy, Pandas)",
+            "Classes & Constructors"
           ],
-          "details": "Python is the primary language for machine learning. In this subsection, you’ll learn the syntax, data types (int, float, string, list, dict), control flow (if-else, loops), and how to write functions. You’ll also explore libraries like NumPy for numerical operations and Pandas for data handling. By the end, you should be able to write simple scripts and manipulate datasets efficiently."
+          "details": "Python is the primary language for machine learning. In this subsection, you’ll learn the syntax, data types (int, float, string, list, dict), control flow (if-else, loops), and how to write functions. You’ll also explore libraries like NumPy for numerical operations and Pandas for data handling. By the end, you should be able to write simple scripts and manipulate datasets efficiently.",
+          "resources": [
+            {
+              "title": "CodeWithHarry Python Playlist",
+              "link": "https://www.youtube.com/playlist?list=PLu0W_9lII9agwh1XjRt242xIpHhPT2llg",
+              "description": "A beginner-friendly playlist that takes you from absolute basics to intermediate Python concepts. Focus on videos up to #60 (classes & constructors) as a prerequisite for ML."
+            },
+            {
+              "title": "freeCodeCamp Python Course (4 Hours)",
+              "link": "https://www.youtube.com/watch?v=eWRfhZUzrAc",
+              "description": "A concise, 4-hour tutorial covering Python fundamentals in one go. Great for quickly building the foundational knowledge needed for ML."
+            },
+            {
+              "title": "Python Crash Course (25 Minutes)",
+              "link": "https://www.youtube.com/watch?v=PNSIWjWAA7o",
+              "description": "A short refresher video to brush up Python basics and syntax quickly."
+            }
+          ]
         },
         {
           "title": "Math Refresher",
           "points": [
             "Linear Algebra essentials",
             "Probability distributions",
-            "Differentiation & Gradients"
+            "Differentiation & Gradients",
+            "Central Limit Theorem & Hypothesis Testing"
           ],
-          "details": "Mathematics is the backbone of ML. In this subsection, focus on vectors, matrices, dot products, and eigenvalues in linear algebra. For probability, cover conditional probability, Bayes theorem, and distributions like Gaussian. Calculus is key for optimization: understand derivatives and gradients to grasp how ML models learn by minimizing loss functions."
+          "details": "Mathematics is the backbone of ML. In this subsection, focus on vectors, matrices, dot products, and eigenvalues in linear algebra. For probability, cover conditional probability, Bayes theorem, and distributions like Gaussian. Calculus is key for optimization: understand derivatives and gradients to grasp how ML models learn by minimizing loss functions. Additionally, explore advanced topics like the Central Limit Theorem and Hypothesis Testing for statistical reasoning.",
+          "resources": [
+            {
+              "title": "Mathematics for Machine Learning Playlist",
+              "link": "https://www.youtube.com/playlist?list=PLlpUUtQ9RrF76jvALwrTp0oOGfk0EGC3s",
+              "description": "A complete series covering essential math concepts required for ML, including linear algebra, probability, and calculus."
+            },
+            {
+              "title": "CampusX Mathematics for Machine Learning",
+              "link": "https://www.youtube.com/watch?v=2GV_ouHBw30&list=PLKnIA16_RmvbYFaaeLY28cWeqV-3vADST",
+              "description": "A supplementary playlist that dives deeper into statistical topics like the Central Limit Theorem and Hypothesis Testing."
+            }
+          ]
         }
       ]
     },
     {
-      "section": "Week 2",
-      "title": "Data Handling & Visualization",
-      "image": "/KP.png",
-      "imagePosition": "right",
-      "content": "In this section, you’ll work with real-world datasets, clean them, and visualize insights. This is a crucial step before model building, as data preparation often consumes 70% of a data scientist’s time.",
-      "subsections": [
+  "section": "Week 2",
+  "title": "Data Handling & Visualization",
+  "image": "/DHV.jpg",
+  "imagePosition": "right",
+  "content": "This section focuses on handling and visualizing data, which are crucial skills before diving into machine learning. You’ll learn how to import, clean, and manipulate datasets using NumPy and Pandas, and then move on to visualizing data effectively with Matplotlib and Seaborn. A solid understanding of these tools will allow you to analyze data, spot patterns, and present insights clearly.",
+  "subsections": [
+    {
+      "title": "Data Handling",
+      "points": [
+        "Importing datasets from CSV and other sources",
+        "NumPy arrays and efficiency over Python lists",
+        "Pandas DataFrames for structured data",
+        "Data cleaning, indexing, and manipulation"
+      ],
+      "details": "Data handling is the first step of any ML pipeline. In this subsection, you’ll explore how to read data from different sources (like CSVs), and why NumPy arrays and Pandas DataFrames are more efficient than Python lists and tuples. You’ll learn to clean, transform, and manipulate data for analysis, setting the foundation for any machine learning task.",
+      "resources": [
         {
-          "title": "Data Handling",
-          "points": [
-            "Reading CSV/JSON",
-            "Cleaning Data",
-            "Handling Missing Values"
-          ],
-          "details": "Data rarely comes clean. Learn to read CSV, JSON, and Excel files using Pandas. Practice cleaning operations like handling null values, removing duplicates, and normalizing column formats. Explore techniques for dealing with missing data — imputation, interpolation, or removal. Good data hygiene ensures better ML model performance."
+          "title": "NumPy & Pandas Playlist (Harshit Vashisth)",
+          "link": "https://www.youtube.com/playlist?list=PLwgFb6VsUj_nFnLLn3M8iacrhDyXqE4N9",
+          "description": "Beginner-friendly playlist focused solely on NumPy and Pandas for data analysis. Watch this first to understand how to work with data efficiently."
         },
         {
-          "title": "Visualization",
-          "points": [
-            "Matplotlib & Seaborn basics",
-            "Plotly interactive charts"
-          ],
-          "details": "Visualization helps uncover data patterns. Start with Matplotlib for static plots (line, bar, scatter). Seaborn builds on this to create statistical visualizations like heatmaps and pairplots. For interactivity, explore Plotly, which allows zooming, hovering, and exporting charts. Effective visualization improves intuition about datasets and guides model decisions."
+          "title": "freeCodeCamp Data Analysis with Python (12 Hours)",
+          "link": "https://www.youtube.com/watch?v=r-uOLxNrNk8",
+          "description": "A detailed course covering NumPy, Pandas, and also Matplotlib and Seaborn. Recommended if you’re comfortable with long, in-depth tutorials."
+        }
+      ]
+    },
+    {
+      "title": "Data Visualization",
+      "points": [
+        "Plotting with Matplotlib",
+        "Graph types: bar, line, scatter, histogram",
+        "Seaborn for statistical visualization",
+        "Choosing effective visual representations"
+      ],
+      "details": "Data visualization helps you see patterns, trends, and outliers in your data. You’ll start with Matplotlib to learn basic graph plotting (line plots, bar charts, scatter plots, histograms) and then move to Seaborn for more advanced and aesthetically pleasing statistical plots. By mastering both, you’ll be able to represent data insights clearly and professionally.",
+      "resources": [
+        {
+          "title": "Matplotlib Playlist (WsCube Tech)",
+          "link": "https://www.youtube.com/playlist?list=PLjVLYmrlmjGcC0B_FP3bkJ-JIPkV5GuZR",
+          "description": "A dedicated 16-video series covering Matplotlib in detail. Perfect to build a strong foundation in plotting and graphing."
+        },
+        {
+          "title": "Seaborn Crash Course (1 Hour)",
+          "link": "https://www.youtube.com/watch?v=ooqXQ37XHMM",
+          "description": "A fast-paced introduction to Seaborn. Recommended after you’re familiar with Matplotlib basics for a smoother transition."
+        }
+      ]
+    },
+    {
+      "title": "Books",
+      "points": [
+        "Python Data Science Handbook (Jake Vanderplas)",
+        "Python for Data Analysis (Wes McKinney)"
+      ],
+      "details": "Books provide a deeper and structured understanding of data handling and visualization. These two are highly recommended and widely used by professionals.",
+      "resources": [
+        {
+          "title": "Python Data Science Handbook, Jake Vanderplas (Chapters 1-4)",
+          "link": "https://archive.org/details/python-data-science-handbook.pdf/page/194/mode/2up",
+          "description": "Covers NumPy, Pandas, Matplotlib, and Seaborn in great detail. Excellent for building strong conceptual and practical foundations."
+        },
+        {
+          "title": "Python for Data Analysis, Wes McKinney",
+          "link": "https://wesmckinney.com/book/",
+          "description": "Written by the creator of Pandas, this book is the ultimate beginner-friendly guide for mastering data analysis with Pandas."
         }
       ]
     }
+  ]
+},
+{
+  "section": "Week 3",
+  "title": "Exploratory Data Analysis & Feature Engineering",
+  "image": "/FE.jpg",
+  "imagePosition": "left",
+  "content": "This week focuses on Exploratory Data Analysis (EDA) and Feature Engineering — two of the most critical steps before applying machine learning algorithms. EDA helps you understand your dataset by identifying patterns, correlations, and anomalies, while Feature Engineering transforms raw data into meaningful features that improve model performance. By the end of this week, you should be comfortable exploring datasets, cleaning data, and creating features that make machine learning models smarter.",
+  "subsections": [
+    {
+      "title": "EDA & Feature Engineering",
+      "points": [
+        "Understanding dataset distributions",
+        "Handling missing values and outliers",
+        "Data cleaning and transformation",
+        "Feature scaling and encoding",
+        "Creating new features from existing data"
+      ],
+      "details": "In this subsection, you’ll learn how to explore datasets systematically, detect anomalies, and visualize relationships between variables. You’ll also cover feature engineering techniques like scaling, encoding categorical variables, and generating new features that improve predictive power. Hands-on practice through projects is encouraged here.",
+      "resources": [
+        {
+          "title": "CampusX Machine Learning Playlist",
+          "link": "https://www.youtube.com/playlist?list=PLKnIA16_Rmvbr7zKYQuBfsVkjoLcJgxHH",
+          "description": "Start from Lecture 15 to 50 to learn EDA and Feature Engineering step by step. Lectures 1–15 cover ML basics and are optional but helpful for intuition."
+        },
+        {
+          "title": "EDA & Feature Engineering (5 Hours, Satyajit Pattanaik)",
+          "link": "https://www.youtube.com/watch?v=FNLLxYcUnow",
+          "description": "A concise 5-hour standalone video covering both EDA and feature engineering. Best used as a refresher, not for beginners."
+        },
+        {
+          "title": "EDA Project Playlist",
+          "link": "https://www.youtube.com/playlist?list=PLTsu3dft3CWhLHbHTTzvG3Vx8XDWemG17",
+          "description": "A collection of 15 project-based videos. Pick one project and follow along to practice your EDA and feature engineering skills."
+        }
+      ]
+    },
+    {
+      "title": "Books, Articles & Practice",
+      "points": [
+        "Bad Data — Q. Ethan McCallum",
+        "Data Wrangling with Python — Jacqueline Kazil",
+        "Medium articles for quick reviews",
+        "Kaggle notebooks for practice"
+      ],
+      "details": "Books and articles provide deeper insights into the principles of data handling and feature engineering. The Kaggle notebook helps you practice by exploring real-world code implementations. Use these resources for references, deeper understanding, and practice while working on projects.",
+      "resources": [
+        {
+          "title": "Feature Engineering for EDA — Medium Article",
+          "link": "https://medium.com/@sanjayskumar4010/feature-engineering-for-eda-a-simple-guide-ae4c69551b19",
+          "description": "A simple guide highlighting various EDA and feature engineering methods. Great for quick review while building projects."
+        },
+        {
+          "title": "Kaggle Notebook on EDA & Feature Engineering",
+          "link": "https://www.kaggle.com/code/kaushikholla/eda-feature-engineering-and-machine-learning",
+          "description": "Hands-on notebook that demonstrates EDA and feature engineering workflows in practice. Recommended for applying what you’ve learned."
+        },
+        {
+          "title": "Bad Data by Q. Ethan McCallum",
+          "link": "https://dl.nemoudar.com/Bad-Data-eBook-nemoudar.pdf",
+          "description": "Covers real-world data challenges and techniques for dealing with problematic datasets."
+        },
+        {
+          "title": "Data Wrangling with Python — Jacqueline Kazil",
+          "link": "https://livres.ycharbi.fr/Livres/ebook%20informatique/Informatique/Langages/Python/Data%20Wrangling%20with%20Python%20%282016%29%20-%20%5BO%27Reilly%5D%20-%20Jacqueline%20Kazil%2C%20Katharine%20Jarmul.pdf",
+          "description": "A practical guide with tips and tools to make working with messy data easier. Complements your EDA learning."
+        }
+      ]
+    }
+  ]
+},
+{
+  "section": "Week 4",
+  "title": "Linear Regression",
+  "image": "/LR.jpg",
+  "imagePosition": "right",
+  "content": "This week introduces one of the most fundamental algorithms in machine learning — Linear Regression. You’ll learn the intuition, mathematics, and implementation behind regression models. Starting from simple linear regression to multiple regression, gradient descent optimization, and the theoretical foundations taught by experts like Andrew Ng, this section lays the groundwork for supervised learning.",
+  "subsections": [
+    {
+      "title": "Playlists on Linear Regression",
+      "points": [
+        "Simple and Multiple Linear Regression",
+        "Gradient Descent Optimization",
+        "Variants of Linear Regression",
+        "Mathematical Foundations of Regression"
+      ],
+      "details": "These playlists and video courses explain regression step by step. CampusX covers practical intuition and coding implementation, while Andrew Ng’s CS229 and Coursera course dive deep into mathematical intuition and derivations. Start with CampusX for beginner-friendly learning, then explore Andrew Ng’s lectures for deeper understanding.",
+      "resources": [
+        {
+          "title": "CampusX Machine Learning Playlist (Lectures 50–67)",
+          "link": "https://www.youtube.com/playlist?list=PLKnIA16_Rmvbr7zKYQuBfsVkjoLcJgxHH",
+          "description": "Beginner-friendly explanation of linear regression, multiple regression, and gradient descent. Highly recommended as the first step."
+        },
+        {
+          "title": "CS229: Machine Learning (Stanford, Andrew Ng)",
+          "link": "https://www.youtube.com/playlist?list=PLoROMvodv4rMiGQp3WXShtMGgzqpfVfbU",
+          "description": "Stanford’s classic ML course by Andrew Ng. Provides a strong mathematical perspective on regression and machine learning foundations."
+        },
+        {
+          "title": "Machine Learning Specialization (Andrew Ng, Coursera)",
+          "link": "https://www.coursera.org/specializations/machine-learning-introduction",
+          "description": "One of the most popular ML courses ever. Highly mathematical and intuitive. Paid, but considered a gold standard for ML beginners. There is always an option to audit the course..."
+        }
+      ]
+    },
+    {
+      "title": "Books & Articles on Linear Regression",
+      "points": [
+        "Conceptual understanding from Google ML Crash Course",
+        "Worked examples of regression in practice",
+        "Code implementations and mathematical explanations"
+      ],
+      "details": "Books and articles provide an alternative approach to understanding regression concepts. Google’s ML crash course is great for a quick grasp, while the ROS Examples page is excellent for studying implementations in detail.",
+      "resources": [
+        {
+          "title": "Google ML Crash Course — Linear Regression",
+          "link": "https://developers.google.com/machine-learning/crash-course/linear-regression",
+          "description": "A practical guide with exercises and conceptual explanations. Great for quick learning and interview preparation."
+        },
+        {
+          "title": "Regression and Other Stories — Examples",
+          "link": "https://avehtari.github.io/ROS-Examples/examples.html",
+          "description": "Contains code and explanations of regression with examples. Useful for applying regression theory to real-world cases."
+        }
+      ]
+    },
+    {
+    "title": "Practice Datasets",
+    "points": [
+      "Introductory regression datasets",
+      "Simple datasets for quick model training",
+      "Challenging datasets for Kaggle competitions"
+    ],
+    "details": "Hands-on practice is essential to mastering regression. These datasets let you apply what you’ve learned, starting from very simple data and moving to real-world, multi-dimensional problems. The Kaggle competition is especially recommended for challenging yourself with advanced regression techniques.",
+    "resources": [
+      {
+        "title": "Egyptian Real Estate Listings Dataset",
+        "link": "https://www.kaggle.com/datasets/hassankhaled21/egyptian-real-estate-listings",
+        "description": "A good introductory dataset for practicing regression in multiple dimensions with real estate data."
+      },
+      {
+        "title": "Salary Dataset",
+        "link": "https://www.kaggle.com/datasets/vrajesh0sharma7/salary-dataset-aspdc",
+        "description": "One of the simplest datasets for linear regression great for beginners starting with model training."
+      },
+      {
+        "title": "House Prices — Advanced Regression Techniques (Kaggle Competition)",
+        "link": "https://www.kaggle.com/competitions/house-prices-advanced-regression-techniques",
+        "description": "A famous Kaggle competition designed for regression practice. Challenging and excellent for learning feature engineering and model tuning."
+      }
+    ]
+    }
+  ]
+},
+{
+  "section": "Week 5",
+  "title": "Logistic Regression & Decision Trees",
+  "image": "/DT.jpg",
+  "imagePosition": "left",
+  "content": "This week covers Logistic Regression and Decision Trees — two fundamental algorithms in supervised learning. Logistic Regression is widely used for binary and multi-class classification tasks, while Decision Trees form the foundation of more advanced ensemble methods like Random Forests and Gradient Boosting. Understanding these models builds the intuition for how machines make decisions and classify data.",
+  "subsections": [
+    {
+      "title": "Logistic Regression",
+      "points": [
+        "Binary and Multi-class Classification",
+        "Sigmoid Function and Decision Boundary",
+        "Gradient Descent in Logistic Regression",
+        "Evaluation Metrics: Accuracy, Precision, Recall"
+      ],
+      "details": "Logistic Regression is the go-to model for classification problems. In this subsection, you’ll explore how logistic regression works mathematically, how to interpret the sigmoid function, and how it’s trained with gradient descent. You’ll also learn about decision boundaries and evaluation metrics to measure performance.",
+      "resources": [
+        {
+          "title": "CampusX Machine Learning Playlist (Lectures 69–83)",
+          "link": "https://www.youtube.com/playlist?list=PLKnIA16_Rmvbr7zKYQuBfsVkjoLcJgxHH",
+          "description": "Continues from the 100 Days of ML series. Covers Logistic Regression in detail with implementation and intuition."
+        },
+        {
+          "title": "StatQuest with Josh Starmer — Logistic Regression",
+          "link": "https://www.youtube.com/playlist?list=PLblh5JKOoLUKxzEP5HA2d-Li7IJkHfXSe",
+          "description": "A lucid and beginner-friendly explanation of Logistic Regression with solid mathematics and clear concepts."
+        },
+        {
+          "title": "GateSmashers ML Lectures",
+          "link": "https://www.youtube.com/playlist?list=PLxCzCOWd7aiEXg5BV10k9THtjnS48yI-T",
+          "description": "Covers Logistic Regression in Lectures 5–6. Great for theoretical understanding and exam preparation (useful for IC272 at IIT Mandi)."
+        }
+      ]
+    },
+    {
+      "title": "Decision Trees",
+      "points": [
+        "Classification and Regression Trees (CART)",
+        "Splitting Criteria: Gini, Entropy, Information Gain",
+        "Overfitting and Pruning",
+        "Interpreting Decision Trees"
+      ],
+      "details": "Decision Trees are intuitive and powerful models for both classification and regression. In this subsection, you’ll learn how trees split data, the math behind impurity measures, and how to prune them to avoid overfitting. Visualizing decision trees will also help understand how models arrive at predictions.",
+      "resources": [
+        {
+          "title": "CampusX Machine Learning Playlist (Lectures 69–83)",
+          "link": "https://www.youtube.com/playlist?list=PLKnIA16_Rmvbr7zKYQuBfsVkjoLcJgxHH",
+          "description": "The 100 Days of ML series continues with a solid introduction to Decision Trees and their implementation."
+        },
+        {
+          "title": "StatQuest with Josh Starmer — Decision Trees (CART)",
+          "link": "https://www.youtube.com/playlist?list=PLblh5JKOoLUKAtDViTvRGFpphEc24M-QH",
+          "description": "Step-by-step explanations of CART (Classification and Regression Trees). Great for understanding tree splitting logic."
+        },
+        {
+          "title": "GateSmashers ML Lectures",
+          "link": "https://www.youtube.com/playlist?list=PLxCzCOWd7aiEXg5BV10k9THtjnS48yI-T",
+          "description": "Covers Decision Trees in Lectures 8–10. Provides a theoretical foundation for understanding how trees work."
+        }
+      ]
+    },
+    {
+      "title": "Kaggle Notebooks & Articles",
+      "points": [
+        "Practical datasets for Logistic Regression",
+        "Datasets for Decision Trees",
+        "Articles and libraries for deeper understanding"
+      ],
+      "details": "This subsection provides datasets to practice building models, along with articles for conceptual reinforcement and libraries for visualization. Kaggle datasets allow you to apply Logistic Regression and Decision Trees on real-world problems, while articles and libraries like dtreeviz make understanding easier.",
+      "resources": [
+        {
+          "title": "Spotify Churn Prediction Dataset",
+          "link": "https://www.kaggle.com/datasets/nabihazahid/spotify-dataset-for-churn-analysis",
+          "description": "A simple dataset for applying Logistic Regression in predicting customer churn."
+        },
+        {
+          "title": "Drug Prediction Dataset for Decision Trees",
+          "link": "https://www.kaggle.com/datasets/pablomgomez21/drugs-a-b-c-x-y-for-decision-trees",
+          "description": "Dataset to practice Decision Trees for classification tasks like drug response prediction."
+        },
+        {
+          "title": "Understanding Logistic Regression — Medium Article",
+          "link": "https://medium.com/@novus_afk/understanding-logistic-regression-a-beginners-guide-73f148866910",
+          "description": "A beginner-friendly article on Logistic Regression concepts and applications."
+        },
+        {
+          "title": "dtreeviz — Decision Tree Visualization Library",
+          "link": "https://github.com/parrt/dtreeviz",
+          "description": "A Python library to visualize Decision Trees in an intuitive and interactive way."
+        }
+      ]
+    }
+  ]
+},
+{
+  "section": "Week 6",
+  "title": "Ensemble Methods",
+  "image": "/ens.png",
+  "imagePosition": "right",
+  "content": "This week introduces Ensemble Methods — powerful techniques that combine multiple models to achieve higher accuracy and robustness than individual learners. You’ll study Voting Classifiers, Bagging, Boosting, and Random Forests. By the end of this week, you’ll understand why ensemble models often win Kaggle competitions and how to implement and tune them effectively.",
+  "subsections": [
+    {
+      "title": "Ensemble Methods",
+      "points": [
+        "Voting Classifiers",
+        "Bagging & Random Forests",
+        "Boosting (AdaBoost, Gradient Boosting, XGBoost — optional for now)",
+        "Hyperparameter Tuning (GridSearchCV, RandomizedSearchCV, Optuna)"
+      ],
+      "details": "This subsection focuses on understanding how ensemble methods combine multiple weak learners to form strong models. You’ll learn the intuition behind voting ensembles, bagging techniques like Random Forests, and boosting methods. Hyperparameter tuning is also emphasized to improve model accuracy.",
+      "resources": [
+        {
+          "title": "CampusX Machine Learning Playlist (Lectures 85–102)",
+          "link": "https://www.youtube.com/playlist?list=PLKnIA16_Rmvbr7zKYQuBfsVkjoLcJgxHH",
+          "description": "Comprehensive coverage of ensemble methods including bagging, boosting, and random forests. Lectures 127–130 on XGBoost are optional for now."
+        },
+        {
+          "title": "Krish Naik — Ensemble Learning Playlist",
+          "link": "https://www.youtube.com/playlist?list=PLZoTAELRMXVPBTrWtJkn3wWQxZkmTXGwe",
+          "description": "Hands-on and practical explanations of ensemble learning and boosting methods. Great for applying concepts in real-world settings."
+        },
+        {
+          "title": "Hyperparameter Tuning for Ensembles",
+          "link": "https://www.youtube.com/watch?v=HdlDYng8g9s&t=284s",
+          "description": "Tutorial on GridSearchCV and RandomizedSearchCV for tuning ensemble models. Highly recommended to master."
+        },
+        {
+          "title": "Optuna for Hyperparameter Tuning (Optional)",
+          "link": "https://www.youtube.com/watch?v=E2b3SKMw934",
+          "description": "Optional resource for learning advanced hyperparameter tuning using Optuna."
+        },
+        {
+          "title": "Kaggle Notebook: Ensemble Learning Techniques",
+          "link": "https://www.kaggle.com/code/pavansanagapati/ensemble-learning-techniques-tutorial",
+          "description": "An excellent notebook demonstrating ensemble methods with examples and hyperparameter tuning in practice."
+        }
+      ]
+    },
+    {
+      "title": "Practice Datasets",
+      "points": [
+        "Iris Dataset — the classic starting point",
+        "MNIST Handwritten Digits — benchmark dataset",
+        "Apply ensembles to real-world classification"
+      ],
+      "details": "Datasets are crucial for applying ensemble methods. The Iris dataset is perfect for beginners to practice tuning and achieving high accuracy. The MNIST dataset is more advanced and serves as a benchmark for classification models. Practicing on these will prepare you for real-world applications and advanced deep learning methods.",
+      "resources": [
+        {
+          "title": "Iris Dataset (Scikit-learn Example)",
+          "link": "https://scikit-learn.org/1.5/auto_examples/datasets/plot_iris_dataset.html",
+          "description": "A classic dataset for beginners. Practice classification and parameter tuning with ensemble methods."
+        },
+        {
+          "title": "MNIST Handwritten Digits Dataset",
+          "link": "https://archive.ics.uci.edu/dataset/683/mnist+database+of+handwritten+digits",
+          "description": "Famous dataset for handwritten digit classification. Helps appreciate the power of deep learning after training with ensembles."
+        }
+      ]
+    }
+  ]
+},
+{
+  "section": "Week 7",
+  "title": "Support Vector Machines & Naive Bayes Classifiers",
+  "image": "/svm.png",
+  "imagePosition": "left",
+  "content": "This week covers two powerful supervised learning algorithms: Support Vector Machines (SVMs) and Naive Bayes classifiers. SVMs are particularly effective for high-dimensional datasets and are widely used in classification tasks, while Naive Bayes is known for its simplicity, efficiency, and theoretical robustness. Together, they provide strong foundations for handling a wide variety of machine learning problems.",
+  "subsections": [
+    {
+      "title": "Support Vector Machines (SVMs)",
+      "points": [
+        "Understanding hyperplanes and margins",
+        "Kernel trick for non-linear data",
+        "SVMs in high-dimensional spaces",
+        "Applications in text and image classification"
+      ],
+      "details": "Support Vector Machines work by finding the optimal hyperplane that separates classes with maximum margin. You’ll learn the theory behind SVMs, how kernels allow handling non-linear datasets, and why SVMs perform well in high-dimensional problems. Practice with implementations will make these concepts clearer.",
+      "resources": [
+        {
+          "title": "CampusX SVM Playlist",
+          "link": "https://www.youtube.com/playlist?list=PLKnIA16_RmvbOIFee-ra7U6jR2oIbCZBL",
+          "description": "Beginner-friendly series introducing SVMs, kernels, and practical implementations. Recommended starting point."
+        },
+        {
+          "title": "StatQuest with Josh Starmer — SVM Mathematics",
+          "link": "https://www.youtube.com/playlist?list=PLblh5JKOoLUL3IJ4-yor0HzkqDQ3JmJkc",
+          "description": "In-depth mathematical explanation of how SVMs work. Ideal for building theoretical understanding."
+        }
+      ]
+    },
+    {
+      "title": "Naive Bayes Classifiers",
+      "points": [
+        "Bayes’ Theorem and Conditional Probability",
+        "Gaussian, Multinomial, and Bernoulli Naive Bayes",
+        "Strengths and Limitations of Naive Bayes",
+        "Scikit-learn Implementation"
+      ],
+      "details": "Naive Bayes is a probabilistic classifier based on Bayes’ theorem with an assumption of feature independence. Despite its simplicity, it is surprisingly effective for tasks like spam detection and text classification. You’ll learn both the theory and how to implement it using scikit-learn.",
+      "resources": [
+        {
+          "title": "CampusX Naive Bayes Playlist",
+          "link": "https://www.youtube.com/playlist?list=PLKnIA16_RmvYNbPMB6ofVLRCcTPUAftdY",
+          "description": "Covers Naive Bayes in detail, including intuition, theory, and implementation. Great for structured learning."
+        },
+        {
+          "title": "Naive Bayes in 15 Minutes — Codebasics",
+          "link": "https://www.youtube.com/watch?v=PPeaRc-r1OI",
+          "description": "Quick, beginner-friendly explanation of Naive Bayes with coding examples."
+        },
+        {
+          "title": "Datacamp Naive Bayes Tutorial",
+          "link": "https://www.datacamp.com/tutorial/naive-bayes-scikit-learn",
+          "description": "Covers Naive Bayes with scikit-learn code examples. A great mix of theory and practice."
+        },
+        {
+          "title": "Kaggle Discussion on Naive Bayes",
+          "link": "https://www.kaggle.com/discussions/general/443301",
+          "description": "Explains the intuition behind Naive Bayes with scikit-learn code snippets. Useful for practical understanding."
+        }
+      ]
+    }
+  ]
+},
+{
+  "section": "Week 8",
+  "title": "Other Algorithms & Key Concepts",
+  "image": "/kms.png",
+  "imagePosition": "right",
+  "content": "This week explores clustering algorithms like K-Means, DBSCAN, Hierarchical Clustering, and K-Nearest Neighbors (KNN). These algorithms are intuitive, versatile, and often yield great results in specific datasets. You’ll also learn about ROC-AUC curves for model evaluation and techniques to handle imbalanced datasets such as SMOTE and ADASYN. This week stands independently and does not require prior knowledge from earlier weeks.",
+  "subsections": [
+    {
+      "title": "Clustering & KNN Algorithms",
+      "points": [
+        "K-Means Clustering",
+        "Hierarchical Clustering",
+        "DBSCAN Algorithm",
+        "K-Nearest Neighbors (KNN)"
+      ],
+      "details": "These algorithms form the foundation of unsupervised learning and instance-based classification. They are widely used in recommendation systems, anomaly detection, and pattern recognition. Learning them provides an intuition-driven entry into machine learning.",
+      "resources": [
+        {
+          "title": "CampusX — 100 Days of Machine Learning (Later Lectures)",
+          "link": "https://www.youtube.com/playlist?list=PLKnIA16_Rmvbr7zKYQuBfsVkjoLcJgxHH",
+          "description": "Covers K-Means, DBSCAN, and KNN with intuitive explanations and coding tutorials."
+        },
+        {
+          "title": "Datacamp Tutorial — DBSCAN",
+          "link": "https://www.datacamp.com/tutorial/dbscan-clustering-algorithm",
+          "description": "Explains DBSCAN with code snippets, intuition, and practical use cases."
+        },
+        {
+          "title": "W3Schools — K-Means Clustering",
+          "link": "https://www.w3schools.com/python/python_ml_k-means.asp",
+          "description": "Beginner-friendly explanation and code snippets for K-Means clustering."
+        },
+        {
+          "title": "From Scratch K-Means Implementation",
+          "link": "https://www.youtube.com/watch?v=lX-3nGHDhQg",
+          "description": "Step-by-step implementation of K-Means from scratch, useful for assignments or deeper understanding."
+        }
+      ]
+    },
+    {
+      "title": "ROC-AUC Curve",
+      "points": [
+        "Understanding ROC (Receiver Operating Characteristic)",
+        "AUC (Area Under the Curve)",
+        "Historical Perspective",
+        "Applications in Model Evaluation"
+      ],
+      "details": "The ROC-AUC curve is a fundamental tool for evaluating classifiers. It visualizes the trade-off between true positive and false positive rates, and the AUC score summarizes classifier performance across thresholds.",
+      "resources": [
+        {
+          "title": "CampusX — ROC-AUC Curve Lecture",
+          "link": "https://www.youtube.com/watch?v=gdW6hj9IXaA&list=PLKnIA16_Rmvbr7zKYQuBfsVkjoLcJgxHH&index=134",
+          "description": "Explains ROC-AUC curves with examples."
+        },
+        {
+          "title": "Wikipedia — ROC Curve",
+          "link": "https://en.wikipedia.org/wiki/Receiver_operating_characteristic#:~:text=the%20criterion%20changes.-,History,the%20perceptual%20detection%20of%20stimuli.",
+          "description": "Historical background on ROC curves, why they were developed, and their applications."
+        },
+        {
+          "title": "Medium Article on ROC Curves",
+          "link": "https://medium.com/@kgm_52135/what-is-an-roc-curve-0389bc44812a",
+          "description": "Beginner-friendly explanation of ROC curves and their interpretation."
+        }
+      ]
+    },
+    {
+      "title": "Imbalanced Datasets & SMOTE",
+      "points": [
+        "Issues with Imbalanced Data",
+        "SMOTE (Synthetic Minority Oversampling Technique)",
+        "ADASYN and Other Oversampling Techniques",
+        "Evaluation Metrics for Imbalanced Data"
+      ],
+      "details": "Imbalanced datasets occur when one class significantly outweighs others, causing poor model performance. Techniques like SMOTE and ADASYN address this by generating synthetic samples for minority classes. Proper evaluation metrics like ROC-AUC and F1-score are crucial in these scenarios.",
+      "resources": [
+        {
+          "title": "CampusX — Handling Imbalanced Data",
+          "link": "https://www.youtube.com/watch?v=yh2AKoJCV3k&list=PLKnIA16_Rmvbr7zKYQuBfsVkjoLcJgxHH&index=132",
+          "description": "Lecture on handling imbalanced datasets, including SMOTE."
+        },
+        {
+          "title": "Google ML Crash Course — Imbalanced Datasets",
+          "link": "https://developers.google.com/machine-learning/crash-course/overfitting/imbalanced-datasets",
+          "description": "Official Google guide on working with imbalanced datasets."
+        },
+        {
+          "title": "Medium — Handling Imbalanced Data",
+          "link": "https://medium.com/@dakshrathi/handling-imbalanced-data-key-techniques-for-better-machine-learning-6e33b466f8b7",
+          "description": "Explains challenges with imbalanced data, code examples, and techniques like ADASYN."
+        }
+      ]
+    }
+  ]
+},
+{
+  "section": "Future Items",
+  "title": "Deep Learning, Generative AI & Agentic AI",
+  "image": "/trans.png",
+  "imagePosition": "left",
+  "content": "Once you’ve completed the foundational machine learning roadmap, you can move on to advanced areas like Deep Learning, Generative AI, and Agentic AI. These fields are at the frontier of modern AI, powering everything from computer vision and natural language processing to autonomous agents. The following resources will help you get started and build expertise. The resources given below are just for references and do not follow any particular order. Do checkout the comprehensive roadmap of that particular topic before diving into one.",
+  "subsections": [
+    {
+      "title": "Deep Learning",
+      "points": [
+        "Artificial Neural Networks",
+        "Backpropagation & Optimization",
+        "CNNs, RNNs, and Transformers",
+        "100 Days of Deep Learning by CampusX",
+        "Andrew Ng’s Neural Networks Course"
+      ],
+      "details": "Deep Learning is the backbone of modern AI. Learn the theory and coding implementation of neural networks, CNNs, RNNs, and advanced architectures that form the basis of cutting-edge AI systems.",
+      "resources": [
+        {
+          "title": "CampusX — 100 Days of Deep Learning",
+          "link": "https://www.youtube.com/playlist?list=PLKnIA16_RmvYuZauWaPlRTC54KxSNLtNn",
+          "description": "Comprehensive course covering deep learning from scratch, perfect for beginners."
+        },
+        {
+          "title": "Andrew Ng — Neural Networks and Deep Learning",
+          "link": "https://www.youtube.com/playlist?list=PLpFsSf5Dm-pd5d3rjNtIXUHT-v7bdaEIe",
+          "description": "A 141-lecture course by Andrew Ng explaining neural networks in depth with mathematical intuition."
+        }
+      ]
+    },
+    {
+      "title": "Generative AI (GenAI)",
+      "points": [
+        "Introduction to Generative Models",
+        "Large Language Models (LLMs)",
+        "Applications in Hackathons & Projects",
+        "Hands-on with OpenAI, Stable Diffusion, and Transformers"
+      ],
+      "details": "Generative AI enables machines to create content, from text and images to audio and beyond. Learn how to leverage LLMs and generative tools for real-world applications.",
+      "resources": [
+        {
+          "title": "freeCodeCamp — Generative AI Course (30 Hours)",
+          "link": "https://www.youtube.com/watch?v=mEsleV16qdo",
+          "description": "A complete, beginner-friendly introduction to Generative AI. Perfect for preparing for hackathons and projects."
+        }
+      ]
+    },
+    {
+      "title": "Agentic AI",
+      "points": [
+        "Understanding AI Agents",
+        "LangGraph for Building Agents",
+        "Model Context Protocol (MCP)",
+        "Practical Applications of Agentic AI"
+      ],
+      "details": "Agentic AI focuses on building autonomous systems that can plan, reason, and take actions. It combines LLMs with tools and workflows for automation and advanced reasoning.",
+      "resources": [
+        {
+          "title": "theAILanguage — Model Context Protocol (MCP)",
+          "link": "https://www.youtube.com/playlist?list=PL6tW9BrhiPTCDteflzehKS6Cn3a79-iCs",
+          "description": "Learn how model context protocols work in this 27-lecture playlist."
+        },
+        {
+          "title": "CampusX — AI Agents & LangGraph",
+          "link": "https://www.youtube.com/playlist?list=PLKnIA16_RmvYsvB8qkUQuJmJNuiCUJFPL",
+          "description": "Ongoing playlist by CampusX explaining LangGraph and AI agents step by step."
+        }
+      ]
+    },
+    {
+      "title": "Reinforcement Learning & MLOps (Additional Topics)",
+      "points": [
+        "Reinforcement Learning (RL) for decision-making systems",
+        "Stanford’s RL Course for advanced intuition",
+        "MLOps for deploying and managing ML systems in production",
+        "Bridging research to real-world applications"
+      ],
+      "details": "Beyond Deep Learning and GenAI, Reinforcement Learning and MLOps are crucial areas for scaling and deploying AI systems effectively. Reinforcement Learning focuses on agents that learn through interaction, while MLOps ensures models are production-ready, scalable, and reliable.",
+      "resources": [
+        {
+          "title": "Stanford — Reinforcement Learning Course",
+          "link": "https://www.youtube.com/playlist?list=PLoROMvodv4rN4wG6Nk6sNpTEbuOSosZdX",
+          "description": "A university-level course covering Reinforcement Learning concepts in detail, with a strong mathematical foundation."
+        },
+        {
+          "title": "MLOps — YouTube Playlist",
+          "link": "https://www.youtube.com/playlist?list=PLkDaE6sCZn6GMoA0wbpJLi3t34Gd8l0aK",
+          "description": "A complete playlist covering the principles and practices of MLOps for real-world deployment of ML systems."
+        }
+      ]
+    }
+  ]
+}
   ]
 }
